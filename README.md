@@ -32,3 +32,5 @@ Construir um pipeline de processamento de dados em tempo real usando serviços A
 
 - Os logs de acesso são enviados em tempo real para o Kinesis Data Streams a partir de aplicativos web, mobile e servidores.
 - Cada evento (registro de log) é um JSON contendo informações como:
+
+https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/06_Json.png
