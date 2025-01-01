@@ -50,3 +50,20 @@ Construir um pipeline de processamento de dados em tempo real usando serviços A
 Exemplo de código Lambda em Python:
 
  <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/07_Lambda.png">
+
+#### 3. Armazenamento dos Dados no Amazon S3
+
+- Dados brutos e processados são armazenados no Amazon S3 para consultas históricas e auditoria.
+- Configurações de ciclo de vida no S3 movem dados antigos para o S3 Glacier para reduzir custos.
+
+#### 4. Indexação e Busca com OpenSearch
+
+- Os dados processados são enviados para o Amazon OpenSearch Service.
+- Permite buscas rápidas, como identificar picos de erros ou filtrar logs por região.
+
+#### 5. Consultas Ad-hoc com Amazon Athena
+
+- O Amazon Athena é configurado para consultar os dados no S3 usando o SQL.
+- Exemplo de consulta:
+
+ <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/07_Lambda.png">  
