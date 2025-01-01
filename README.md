@@ -67,3 +67,28 @@ Exemplo de código Lambda em Python:
 - Exemplo de consulta:
 
  <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/08_Select.png">  
+
+#### 6. Monitoramento e Alertas com CloudWatch
+
+- Amazon CloudWatch recebe métricas e logs do Lambda e Kinesis para monitorar a saúde do pipeline.
+- Configurações de alarmes notificam a equipe sobre problemas, como atrasos no processamento.
+
+#### 7. Visualização com Amazon QuickSight
+
+- Conecta-se ao S3, OpenSearch e Athena para criar painéis interativos.
+- Exemplos de visualizações:
+  - Gráfico de barras mostrando acessos por tipo de dispositivo.
+  - Linha do tempo de erros detectados.
+  - Mapas de calor indicando regiões com mais acessos.
+ 
+### Benefícios:
+
+1. Processamento em Tempo Real: Através do Kinesis e Lambda, eventos são processados assim que chegam.
+2. Armazenamento Escalável: O S3 permite armazenar grandes volumes de dados a baixo custo.
+3. Consultas Flexíveis: Athena possibilita explorar dados rapidamente sem a necessidade de ETLs complexos.
+4. Busca Rápida: OpenSearch facilita a localização de informações específicas.
+5. Visualizações Poderosas: QuickSight oferece insights acionáveis em dashboards personalizáveis.
+6. Escalabilidade Automática: Os serviços AWS escalam automaticamente com o aumento do volume de dados.
+
+Essa arquitetura ilustra como as ferramentas da AWS podem ser integradas para criar um pipeline de Big Data escalável e eficiente para análise de dados em tempo real e histórico.
+
