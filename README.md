@@ -100,11 +100,11 @@ Exemplo de código Lambda em Python:
 
 - Fluxo Geral
 
-  1. A função Lambda é acionada por um evento contendo uma lista de registros.
-  2. Cada registro na lista Records é processado individualmente.
-  3. Os dados são extraídos e decodificados de JSON.
-  4. Se um erro crítico for detectado (indicado pela presença de error_code), ele é registrado no console.
-  5. Os dados são enviados para outra função (process_data) para continuar o processamento.
+  - 1. A função Lambda é acionada por um evento contendo uma lista de registros.
+  - 2. Cada registro na lista Records é processado individualmente.
+  - 3. Os dados são extraídos e decodificados de JSON.
+  - 4. Se um erro crítico for detectado (indicado pela presença de error_code), ele é registrado no console.
+  - 5. Os dados são enviados para outra função (process_data) para continuar o processamento.
    
 
 #### 3. Armazenamento dos Dados no Amazon S3
