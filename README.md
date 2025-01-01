@@ -1,3 +1,8 @@
+<div> 
+<p><a href="https://github.com/JosiTubaroski/Introducao_Engenharia_Dados/blob/main/README.md">Introdução a Engenharia de Dados</a></p>
+</div> 
+
+
 # Análise de Dados de Log de Acesso em Tempo Real com AWS
 
 ### Cenário:
@@ -33,4 +38,5 @@ Construir um pipeline de processamento de dados em tempo real usando serviços A
 - Os logs de acesso são enviados em tempo real para o Kinesis Data Streams a partir de aplicativos web, mobile e servidores.
 - Cada evento (registro de log) é um JSON contendo informações como:
 
-https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/06_Json.png
+ <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/06_Json.png">
+
