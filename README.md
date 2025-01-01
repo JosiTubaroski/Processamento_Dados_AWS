@@ -49,4 +49,4 @@ Construir um pipeline de processamento de dados em tempo real usando serviços A
 
 Exemplo de código Lambda em Python:
 
- <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/06_Json.png">
+ <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/07_Lambda.png">
