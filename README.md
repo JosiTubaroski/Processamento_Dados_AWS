@@ -51,6 +51,62 @@ Exemplo de código Lambda em Python:
 
  <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/07_Lambda.png">
 
+ #### Código Explicado
+
+ 1. Importação de Bibliotecas
+
+<img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/09_Codigo_Explicado_Biblioteca.png">
+
+ - import json: Importa o módulo Python que lida com JSON (JavaScript Object Notation). Esse módulo é usado para converter strings JSON em objetos Python (dicionários, listas, etc.) e vice-versa.
+
+2. Definição da Função lambda_handler
+
+<img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/10_def_lambda.png">
+
+- def lambda_handler: Define a função principal que será executada quando a AWS Lambda for acionada.
+- Parâmetros:
+  -   event: Contém os dados do evento que acionaram a função. No contexto de AWS, isso pode ser mensagens do Amazon Kinesis, SQS, ou outro serviço.
+  -   context: Contém informações sobre a execução da função Lambda, como tempo limite e memória disponível.
+ 
+ 3. Iteração sobre os Registros do Evento
+
+<img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/11_Registros_Eventos.png">
+
+- event['Records']: Geralmente, para eventos vindos de fontes como Kinesis ou DynamoDB Streams, os dados do evento estão armazenados na lista Records.
+- for record: Itera sobre cada registro na lista Records.
+
+4. Processamento do Payload
+
+<img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/12_Playload.png">
+
+- record['Data']: Cada registro contém os dados relevantes, geralmente em formato codificado ou como uma string JSON.
+- json.loads(): Converte a string JSON em um objeto Python, normalmente um dicionário.
+
+5. Verificação de Erros
+
+<img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/13_Ver_erro.png">
+  
+- payload.get('error_code'): Verifica se a chave error_code existe no dicionário payload. Caso exista, retorna o valor associado; caso contrário, retorna None.
+- Ação em caso de erro:
+  - Se a chave error_code existir, o código considera que ocorreu um erro crítico.
+  - O erro é registrado no console com print.
+
+6. Processamento de Dados
+
+<img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/14_Processamento_Payload.png">
+
+- process_data(payload): Envia o payload para uma função chamada process_data, que não está definida neste trecho do código.
+  - Essa função provavelmente realiza alguma transformação ou encaminhamento dos dados para outra etapa do pipeline.
+
+- Fluxo Geral
+
+  1. A função Lambda é acionada por um evento contendo uma lista de registros.
+  2. Cada registro na lista Records é processado individualmente.
+  3. Os dados são extraídos e decodificados de JSON.
+  4. Se um erro crítico for detectado (indicado pela presença de error_code), ele é registrado no console.
+  5. Os dados são enviados para outra função (process_data) para continuar o processamento.
+   
+
 #### 3. Armazenamento dos Dados no Amazon S3
 
 - Dados brutos e processados são armazenados no Amazon S3 para consultas históricas e auditoria.
