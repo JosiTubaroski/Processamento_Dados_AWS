@@ -40,3 +40,13 @@ Construir um pipeline de processamento de dados em tempo real usando serviços A
 
  <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/06_Json.png">
 
+#### 2. Processamento em Tempo Real com AWS Lambda
+
+- Uma função AWS Lambda consome os dados do Kinesis e executa transformações básicas, como:
+  - Validar o formato do log.
+  - Identificar erros críticos.
+  - Enviar métricas específicas para o CloudWatch.
+
+Exemplo de código Lambda em Python:
+
+ <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/06_Json.png">
