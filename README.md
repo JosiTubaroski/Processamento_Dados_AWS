@@ -66,4 +66,4 @@ Exemplo de código Lambda em Python:
 - O Amazon Athena é configurado para consultar os dados no S3 usando o SQL.
 - Exemplo de consulta:
 
- <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/07_Lambda.png">  
+ <img src="https://github.com/JosiTubaroski/Processamento_Dados_AWS/blob/main/img/08_Select.png">  
